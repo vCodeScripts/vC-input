@@ -16,7 +16,7 @@ document.onkeydown = function(data){
 
 $(document).on('click', '.submit', function(){
     let cb = CheckIfRequired()
-    console.log(cb)
+
     if (cb) {
         let tablo = {}
         let inputs = document.getElementsByClassName('optionInput')
@@ -48,7 +48,7 @@ function CheckIfRequired(){
         let req = $(inputs[pimps]).parent().attr('data-required')
 
         if (req == 'true'){
-            console.log('geldi')
+
             if ($(inputs[pimps]).val() == ''){
 
                 cango = false
